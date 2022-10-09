@@ -7,7 +7,7 @@ namespace OOPCircle
     class Circle //Calculate area and volym of circle and orb.
     {
         const float pi = 3.141f;
-        private int _radius;
+        int _radius;
 
         public Circle(int radius)
         {
