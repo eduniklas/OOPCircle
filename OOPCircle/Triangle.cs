@@ -8,23 +8,26 @@ namespace OOPCircle
     {
         int _widht;
         int _hight;
+        public Triangle(int widht, int hight)
+        {
+            this._widht = widht;
+            this._hight = hight;
+            if (widht <= 0)
+            {
+                throw new Exception("Basen måste vara sörre än 0");
+            }
+            else if (hight <= 0)
+            {
+                throw new Exception("Höjden måste vara större än 0");
+            }
+        }
 
         public void getTriangleInfo()
         {
             float area = _widht * _hight / 2f;
-            Console.WriteLine("Arean på triangeln är: " + area + " cm^2");
+            Console.WriteLine("Triangeln area är: " + area + " cm^2");
             float volym = (_widht * _widht) * _hight / 3f;
-            Console.WriteLine("Volymen på pyramid är: " + volym + " cm^3");
-        }
-        public int SetWidht(int widht)
-        {
-            this._widht = widht;
-            return _widht;
-        }
-        public int SetHight(int hight)
-        {
-            this._hight = hight;
-            return _hight;
+            Console.WriteLine("Pyramidens volym är: " + volym + " cm^3");
         }
     }
 }
