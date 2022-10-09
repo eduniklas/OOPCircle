@@ -20,47 +20,12 @@ namespace OOPCircle
         public void getArea()
         {
             float area = _radius * _radius * pi;
-            Console.WriteLine("Cirkelns area är: " + (float)Math.Round(area,2) + " cm^2");
+            Console.WriteLine("Cirkelns area är: " + (float)Math.Round(area, 2) + " cm^2");
         }
         public void getVolym()
         {
             float volym = 4 * pi * (float)Math.Pow(_radius, 3) / 3; //read
-            Console.WriteLine("Sfärens volym är: " + (float)Math.Round(volym,3) + " cm^3");
+            Console.WriteLine("Sfärens volym är: " + (float)Math.Round(volym, 3) + " cm^3");
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //public Circle(int radius)
-    //{
-    //    this._radius = radius;
-    //    Console.WriteLine("Arean av cirkeln är: " + getArea(_area) + " cm^2");
-    //}
-    //public float getArea(float radius) 
-    //{
-    //    float area = _radius * _radius * pi;
-    //    this._area = (float)Math.Round(area, 3);
-    //    return _area;
-    //}
-    //public void getVolym()
-    //{
-    //    double volym = 4 * pi * Math.Pow(_radius, 3) / 3;
-    //    Console.WriteLine("Volymen på sfären är: " + Math.Round(volym, 3) + " cm^3");
-    //}
 }

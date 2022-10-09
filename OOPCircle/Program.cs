@@ -19,7 +19,7 @@ namespace OOPCircle
             C2.getVolym();
 
             //Set parameters for triangle and get respons.
-            Triangle T1 = new Triangle(15,25);
+            Triangle T1 = new Triangle(15, 25);
             T1.getTriangleInfo();
         }
     }
